@@ -1,5 +1,5 @@
 # Use the respective Makefile to build the image.
-FROM ubuntu:rolling
+FROM ubuntu:22.10
 
 # common environemnt variables
 ENV NB_USER jovyan
