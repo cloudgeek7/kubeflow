@@ -39,7 +39,7 @@ COPY --from=frontend-kubeflow-lib /src/dist/kubeflow/ ./node_modules/kubeflow/
 RUN npm run build -- --output-path=./dist/default --configuration=production
 
 # Step 2: Packages assets for serving
-FROM node:18.14.1-alpine AS serve
+FROM node:18.15-alpine AS serve
 
 ENV NODE_ENV=production
 WORKDIR /app
